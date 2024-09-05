@@ -407,7 +407,7 @@
             </div>
         </div>
     </section>
-    <section class="min-h-screen items-center justify-center bg-hero-image bg-cover bg-no-repeat relative">
+    <section class=" min-h-screen items-center justify-center bg-hero-image bg-cover bg-no-repeat relative">
         <div class="container  w-4/5 mx-auto ">
           <nav class="flex justify-between items-center">
             <div>
@@ -423,7 +423,7 @@
                     </defs>
                 </svg>
             </div>
-            <div id="navlinks" class="transiton ease-out duration-500 lg:static lg:min-h-fit absolute bg-black  min-h-[100vh] left-0 lg:top-0 top-[-200%] lg:w-auto w-full items-center flex px-5">
+            <div id="navlinks" class="transiton ease-out duration-500 lg:static lg:min-h-fit absolute bg-black  min-h-screen left-0 top-[-400%] lg:w-auto w-full items-center flex px-5">
                 <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[46px] gap-8">
                     <li class="text-white"><a> Home</a></li>
                     <li class="text-white"><a> About</a></li>
@@ -438,7 +438,7 @@
             </div>
           </nav>
             <div class="flex flex-wrap items-center justify-center">
-                <div class="w-1/2">
+                <div class=" w-full md:w-1/2">
                     <div class=" text-white font-semibold text-[16px]">
                         APE TOGETHER STRONG
                     </div>
@@ -451,8 +451,10 @@
                         have their helmets ready for the next moon landing.
                     </p>
                 </div>
+                <div class=" w-full md:w-1/2">
                 <div class="monkey-img ">
                     <img src="/src/images/Hero_Placeholder1.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -461,7 +463,7 @@
         const navlinks = document.querySelector('#navlinks')
        function onToggleMenu(e){
         e.name = e.name === 'menu' ? 'close' : 'menu'
-        navlinks.classList.toggle('top-[9%]')
+        navlinks.classList.toggle('top-[0%]')
        }
     </script>
 </body>
